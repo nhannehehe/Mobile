@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Data
+let bills = [275, 40, 430];
+
+bills.forEach(bill => {
+    // Dùng toán từ 3 ngôi
+    let tip = (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+
+    // Tính tổng 
+    let total = bill + tip;
+
+    // In ra kết quả của 3 data có sẵn
+    console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${total}`);
+});
+    </script>
+</body>
+</html>
