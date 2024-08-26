@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Toan tu 3 ngoi o bai truoc
+function calcTip(bill) {
+    return (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+}
+
+// Test voi gia tri la 100 
+console.log(calcTip(100)); 
+
+// Mảng hóa đơn
+let hoaDon = [125, 555, 44];
+
+// mảng tips
+let tips = hoaDon.map(calcTip);
+
+// Mảng total
+let total = hoaDon.map((bill, index) => bill + tips[index]);
+
+// Output 
+console.log("Hóa Đơn:", hoaDon);   
+console.log("Tips:", tips);     
+console.log("Total:", total);   
+
+    </script>
+</body>
+</html>
